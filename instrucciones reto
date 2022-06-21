@@ -1,0 +1,20 @@
+Pasos para abrir lanzar los nodos 
+
+1. Conectarse a ssh al puzzlebot mediante el siguiente comando 
+	ssh puzzlebot@10.42.0.1
+
+2. Cargar el modelo de detección de señales 
+	export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
+
+3. Cargar el nodo de deteción de señales 
+	rosrun vision_codes detection_signals.py 
+
+4. Casi al mismo tiempo lanzar el nodo de la camara 
+	roslaunch ros_deep_learning_ videio_source.ros1.launch 
+
+5. Lanzar el nodo de los colores 
+	rosrun vision_codes color_ndode.py
+
+seis. Posteriormente lanzar el nodo del seguidor 
+	rosrun vision_codes seguidor_modifications.py 
+

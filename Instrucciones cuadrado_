@@ -1,0 +1,17 @@
+Procedimiento
+	Entrar mediante SSH a la Jetson 
+	En la consola escribir:
+	1.	ssh puzzlebot@10.42.0.1
+	Lanzar el nodo de la camara 
+	2.	roslaunch ros_deep_learning video_source.ros1.launch 
+	En otra consola escribir:
+	3.	export ROS_MASTER_URI=http://10.42.0.1:11311
+	4.	export ROS_IP=10.42.0.194
+	5.	rosrun rqt_image_view rqt_image_view 
+
+	Una vez activada la cámara repetir el paso 1.
+	Ahora se procede a correr el código del cuadrado con el siguiente comando:
+	6.	rosrun solution square.py
+
+	
+
