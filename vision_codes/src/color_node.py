@@ -2,7 +2,6 @@
 
 # Authors: 
 #	Eva Denisse Vargas 	  A01377098
-# 	Brenda Vega Mendez 	  A01378360 
 
 # Activity: traffic light color detector
 # Date: June 16th, 2022
